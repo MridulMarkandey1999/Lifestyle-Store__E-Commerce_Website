@@ -1,0 +1,108 @@
+/* This is the stylesheet that i have used for styling my Lifestyle Store website.*/
+
+
+/* To occupy the entire width of the webpage*/
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+/* Added padding so that the content dosen't go behind header*/  
+body{
+    padding-top:100px;
+}
+
+/* To make the table data look heavier in the  Table used in cart.php page and order_history.php page. and text in the prodcuts.php page */
+td,
+p
+{  
+    font-weight: 700;
+}
+
+/* To differentiate text written in about.php page from the headings */
+.w{
+    font-weight:550;
+}
+
+/* Used to display the appropriate content length */
+#content{
+    min-height: 600px;
+}
+
+/* To set background image in index.php page */
+#banner_image {
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(../img/intro-bg_1.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+/* To write the content in index.html page */
+#banner_content {
+    position: relative;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    margin-top: 12%;
+    margin-bottom: 12%;
+    background-color: rgba(0, 0, 0, 0.7);
+    max-width: 660px;
+}
+
+#item_list {
+    padding-top: 50px;
+}
+
+/*This code ensures that when we navigate to a particular section of a page, the section does not get lost behind the header */
+#cameras:before, #watches:before, #shirts:before{
+    display: block; 
+    content: " "; 
+    margin-top: -85px; 
+    height: 85px; 
+    visibility: hidden;
+}
+
+/* Used for the content inside the panels used in sign-up and login forms. */
+#login-panel .panel-footer{
+    font-weight:normal;
+}
+
+/* To add footer to every page */
+footer {
+    padding: 10px 0;
+    background-color: #101010;
+    color:#9d9d9d;
+    bottom: 0;
+    width: 100%;
+}
+
+/* To give special significance to error messages */
+.red{
+    color:red;
+}
+
+/* To give margin at bottom */
+#settings-container{
+    margin-bottom:10px;
+}
+
+/* Used for fonts in navigation bar */
+.navbar-brand{
+    font-size:20px;
+}
+
+/* To make website responsive */
+@media(max-width:768px) {
+    #banner_content {
+        padding-bottom: 15%;
+    }
+    footer{
+        text-align:left;
+    }
+}
+
+ /* To specify a colour to remove item from cart */
+.remove_item_link{
+    color:#0000ff;
+}
